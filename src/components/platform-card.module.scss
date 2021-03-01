@@ -1,9 +1,9 @@
 .platform-card {
   background-color: #ffffff;
-  box-shadow: 0 4px 4px 0 rgba(#3b3b3b, 0.4);
+  box-shadow: 0 4px 4px 0 rgba(#3b3b3b, 0.1);
   border-radius: 0.25rem;
   width: 180px;
-  padding: 16px 0;
+  padding: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,9 +17,18 @@
     justify-content: space-between;
     text-decoration: none;
 
-    img {
-      width: 140px;
+    .img-container {
       margin-bottom: 0.5rem;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 140px;
+        width: 100%;
+        margin-bottom: 0;
+      }
     }
 
     span {

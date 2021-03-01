@@ -1,5 +1,3 @@
-TODOS:
-Add Social Media Links to index page
-Add Background Image and header to index page
-Generate dynamic page titles
+TODOS LE FOYER:
+Replace image
 Isolate Landing Page component

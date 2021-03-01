@@ -6,7 +6,9 @@ const PlatformCard = ({ image, imageAlt, url, ctaText, ...props }) => {
   return (
     <div className={platformCardStyles.platformCard}>
       <a target="_blank" rel="noopener noreferrer" href={url}>
-        <img alt={imageAlt} src={image}></img>
+        <div className={platformCardStyles.imgContainer}>
+          <img alt={imageAlt} src={image}></img>
+        </div>
         <span className="label">{ctaText}</span>
       </a>
     </div>

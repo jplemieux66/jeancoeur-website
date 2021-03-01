@@ -4,11 +4,10 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: "JeanCoeur",
-    description:
-      "JeanCoeur is a montreal-based music producer specializing in Hip-Hop, Pop and Rnb instrumentals",
-    url: "https://jeancoeur.com",
-    image: "/images/forest_1.jpg",
+    title: "Ma Zone - Baggies et JeanCoeur",
+    description: "Le Foyer présente Ma Zone - Baggies et JeanCoeur",
+    url: "https://foyerfoyer.com",
+    image: "/images/mazone_cover.jpg",
   },
   plugins: [
     "gatsby-plugin-sass",
@@ -37,5 +36,11 @@ module.exports = {
       },
     },
     "gatsby-plugin-react-helmet",
+    {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: "214369033720037",
+      },
+    },
   ],
 }
