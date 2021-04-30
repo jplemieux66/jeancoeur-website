@@ -4,10 +4,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: "Ma Zone - Baggies et JeanCoeur",
-    description: "Le Foyer présente Ma Zone - Baggies et JeanCoeur",
     url: "https://foyerfoyer.com",
-    image: "/images/mazone_cover.jpg",
   },
   plugins: [
     "gatsby-plugin-sass",
@@ -40,6 +37,12 @@ module.exports = {
       resolve: `gatsby-plugin-facebook-pixel`,
       options: {
         pixelId: "214369033720037",
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: ["G-QE15MLNM60"],
       },
     },
   ],

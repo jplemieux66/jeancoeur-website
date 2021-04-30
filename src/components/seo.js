@@ -1,5 +1,3 @@
-// Taken from https://www.gatsbyjs.org/docs/add-seo-component/
-
 import React from "react"
 import { Helmet } from "react-helmet"
 import PropTypes from "prop-types"
@@ -9,10 +7,7 @@ const query = graphql`
   query SEO {
     site {
       siteMetadata {
-        title
-        description
         siteUrl: url
-        image
       }
     }
   }
@@ -23,7 +18,7 @@ const SEO = ({ title, description, image }) => (
     query={query}
     render={({
       site: {
-        siteMetadata: { title, description, siteUrl, image },
+        siteMetadata: { siteUrl },
       },
     }) => {
       const seo = {
