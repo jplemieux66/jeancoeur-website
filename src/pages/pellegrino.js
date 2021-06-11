@@ -9,7 +9,6 @@ import spotifyIcon from "./../images/spotify.svg"
 import appleMusicIcon from "./../images/applemusic.svg"
 import itunesIcon from "./../images/itunes.svg"
 import bandcampIcon from "./../images/bandcamp.svg"
-import tidalIcon from "./../images/tidal_icon.svg"
 import youtubeMusicIcon from "./../images/youtubemusic_icon.svg"
 
 import "../utils/styles.scss"
@@ -21,6 +20,7 @@ const PellegrinoPage = () => {
         title="Olivier Orange x JeanCoeur - Pellegrino"
         description="Olivier Orange x JeanCoeur - Pellegrino"
         image="/images/pellegrino_cover.jpg"
+        pageName="pellegrino"
       />
       <Helmet>
         <meta charSet="utf-8" />

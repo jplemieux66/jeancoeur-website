@@ -13,7 +13,7 @@ const query = graphql`
   }
 `
 
-const SEO = ({ title, description, image }) => (
+const SEO = ({ title, description, image, pageName }) => (
   <StaticQuery
     query={query}
     render={({
@@ -32,7 +32,9 @@ const SEO = ({ title, description, image }) => (
           <Helmet title={seo.title}>
             <meta name="description" content={seo.description} />
             <meta name="image" content={seo.image} contenttype />
-            {seo.url && <meta property="og:url" content={seo.url} />}
+            {seo.url && (
+              <meta property="og:url" content={seo.url + "/" + pageName} />
+            )}
             {seo.title && <meta property="og:title" content={seo.title} />}
             {seo.description && (
               <meta property="og:description" content={seo.description} />
