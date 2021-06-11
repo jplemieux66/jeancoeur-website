@@ -34,7 +34,7 @@ const PellegrinoPage = () => {
         <div className={landingPageTemplateStyles.pageContent}>
           <div className={landingPageTemplateStyles.videoContainer}>
             <Video
-              videoSrcURL="https://www.youtube.com/embed/mVqFmZt9BHE"
+              videoSrcURL="https://www.youtube.com/embed/FZEv8fJv3vY"
               videoTitle="Olivier Orange x JeanCoeur - Pellegrino"
             />
           </div>
