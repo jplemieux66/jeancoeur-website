@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import PlatformCard from "../components/platform-card"
 import { Helmet } from "react-helmet"
 
-import landingPageTemplateStyles from "./pellegrino.module.scss"
+import pellegrinoStyles from "./pellegrino.module.scss"
 import spotifyIcon from "./../images/spotify.svg"
 import appleMusicIcon from "./../images/applemusic.svg"
 import itunesIcon from "./../images/itunes.svg"
@@ -30,15 +30,15 @@ const PellegrinoPage = () => {
         />
         <title>Olivier Orange x JeanCoeur - Pellegrino</title>
       </Helmet>
-      <div className={landingPageTemplateStyles.pageContainer}>
-        <div className={landingPageTemplateStyles.pageContent}>
-          <div className={landingPageTemplateStyles.videoContainer}>
+      <div className={pellegrinoStyles.pageContainer}>
+        <div className={pellegrinoStyles.pageContent}>
+          <div className={pellegrinoStyles.videoContainer}>
             <Video
               videoSrcURL="https://www.youtube.com/embed/FZEv8fJv3vY"
               videoTitle="Olivier Orange x JeanCoeur - Pellegrino"
             />
           </div>
-          <div className={landingPageTemplateStyles.platformCardsContainer}>
+          <div className={pellegrinoStyles.platformCardsContainer}>
             <PlatformCard
               image={spotifyIcon}
               imageAlt="Spotify"
