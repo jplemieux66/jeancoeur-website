@@ -27,9 +27,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-s3`,
       options: {
-        bucketName: "jeancoeur",
+        bucketName: "foyermusique",
         protocol: "https",
-        hostname: "www.jeancoeur.com",
+        hostname: "www.foyerfoyer.com",
       },
     },
     "gatsby-plugin-react-helmet",
